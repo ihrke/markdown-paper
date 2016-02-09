@@ -22,6 +22,24 @@ pip install pandoc-fignos
 
 NOTE: `paper.md` contains example code for tables, figures, equations, references and so on.
 
+## Recommended Editor/Tools
+
+I think it works very nicely to write markdown-based papers in the [atom](https://atom.io/) editor. The following packages are useful:
+
+- [autocomplete-bibtex](https://github.com/apcshields/autocomplete-bibtex)
+
+    Allows to get a drop-down list of references when writing `@citation`. However, it is currently necessary to put a global `.bib` file into the config file `config.cson` (see [documentation](https://atom.io/docs/latest/customizing-atom#advanced-configuration)):
+
+    ~~~{yaml}
+    'autocomplete-bibtex':
+      'references': [
+        '/path/to/references.bib'
+        '/path/to/references.json'
+      ]
+    ~~~
+- [markdown-preview](https://github.com/burodepeper/language-markdown) for nice syntax highlighting
+- [pdf-view](https://github.com/izuzak/atom-pdf-view) for viewing the PDF in Atom directly
+
 ## Dependencies
 
 - [pandoc](http://pandoc.org/)
