@@ -9,11 +9,13 @@ So far, I have used it using `./templates/elsarticle-template-1.latex` but other
 ## Usage
 
 1. Install the dependencies
+
     ~~~{bash}
-sudo apt-get install pandoc pandoc-citeproc
-pip install pandoc-fignos
+    sudo apt-get install pandoc pandoc-citeproc
+    pip install pandoc-fignos
     ~~~
 2. Clone this repository
+ 
     ~~~{bash}
     git clone
     ~~~
