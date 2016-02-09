@@ -4,12 +4,14 @@ The source of this document is written in [markdown](https://daringfireball.net/
 
 The `Makefile` details how the translation works. If you are on linux, simply calling `make` in the parent directory will compile the report to a pdf-format if all dependencies are installed. Edit the variables in the Makefile to choose a template (located in `./templates`).
 
+So far, I have used it using `./templates/elsarticle-template-1.latex` but others may follow.
+
 ## Usage
 
 1. Install the dependencies
     ~~~{bash}
-    sudo apt-get install pandoc pandoc-citeproc
-    pip install pandoc-fignos
+sudo apt-get install pandoc pandoc-citeproc
+pip install pandoc-fignos
     ~~~
 2. Clone this repository
     ~~~{bash}
@@ -18,13 +20,7 @@ The `Makefile` details how the translation works. If you are on linux, simply ca
 3. Edit `Makefile` to choose a template
 4. Write paper in `paper.md`, refs in `references.bib`, compile with `make`
 
-## Stuff
-
-### Tables
-I have not found a good way to include more sophisticated tables in Markdown. Luckily, pandoc supports raw-latex tables, so it is possible to just include tables in `paper.md` file in raw latex like
-~~~{latex}
-
-~~~
+NOTE: `paper.md` contains example code for tables, figures, equations, references and so on.
 
 ## Dependencies
 

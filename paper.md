@@ -1,23 +1,22 @@
 ---
 title:  'Great and certainly not overstated contribution to the literature'
-journal: Journal of Best Research Ever
+journal: 'Journal of Good Research'
 author:
 - name: Me Ofcourse
 - name: Some Otherdude
   address: Institute for Psychology, University of Tromsø
 - name: And Thisguy
   address: University of Otherplace
-keyword:
-- latex
-- markdown
+  keyword:
+  - latex
+  - markdown
 abstract: |
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 linenumbers: true
-bibliography: tdcs_mw.bib
+bibliography: references.bib
 ...
-
 
 # Introduction
 
@@ -44,6 +43,8 @@ And referenced from here as Fig. @fig:dummy.
 
 Complex tables can use standard LaTeX code as this one.
 
+Equations can be used inline $y=\beta_0 + \beta_1 x + \epsilon$ or as usual $$f(x)=\frac{1}{x}$$
+
 <!---
 Table in LaTeX format because of fancy formatting
 -->
@@ -65,8 +66,6 @@ Table in LaTeX format because of fancy formatting
 \end{tabular}
 \label{tab:probbf}
 \end{table}
-
-
 
 # Results
 
