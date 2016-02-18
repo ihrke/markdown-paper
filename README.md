@@ -1,4 +1,8 @@
-# Scientific Papers in Markdown
+# markdown-paper
+
+Scientific paper in markdown using LaTeX.
+
+See [markdown-talk](https://github.com/ihrke/markdown-talk) for template for a beamer-based presentation.
 
 The source of this document is written in [markdown](https://daringfireball.net/projects/markdown/) (file `paper.md`) and translated to latex using [pandoc](http://pandoc.org/) and customized templates located in the `templates` folder. References are stored in `references.bib` in [bibtex](http://www.bibtex.org/) format.
 
