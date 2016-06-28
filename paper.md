@@ -3,11 +3,18 @@ title:  'Great and certainly not overstated contribution to the literature'
 journal: 'Journal of Good Research'
 author:
 - name: Me Ofcourse
+  footnote: 1
 - name: Some Otherdude
-  address: Institute for Psychology, University of Tromsø
+  footnote: 1
 - name: And Thisguy
-  address: University of Otherplace
-  keyword:
+  footnote: 2
+  corresponding: and.thisguy@otherplace.org
+affiliation:
+- number: 1
+  name: Institute for Psychology, University of Tromsø
+- number: 2
+  name: University of Otherplace
+keyword:
   - latex
   - markdown
 abstract: |

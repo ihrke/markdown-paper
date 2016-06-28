@@ -19,6 +19,9 @@
 \documentclass[preprint,authoryear,12pt]{elsarticle}
 \usepackage[utf8]{inputenc}
 
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 \usepackage[unicode=true]{hyperref}
 \hypersetup{breaklinks=true,
             bookmarks=true,
@@ -74,6 +77,13 @@
 %%
 %% \biboptions{comma,round}
 
+%% for the corresponding author footnote
+\makeatletter
+\def\@xfootnote[#1]{%
+  \protected@xdef\@thefnmark{#1}%
+  \@footnotemark\@footnotetext}
+\makeatother
+
 \usepackage{graphicx}
 % We will generate all images so they have a width \maxwidth. This means
 % that they will get their normal width if they fit onto the page, but
@@ -126,12 +136,29 @@
 %%------------AUTHORS--------------
 $for(author)$
 $if(author.name)$
-\author{$author.name$}
-$endif$
-$if(author.address)$
-\address{$author.address$}
+\author{$author.name$\(^$author.footnote$\)$if(author.corresponding)$\footnote[$$\ast$$]{Corresponding author: \url{$author.corresponding$}}$endif$}
 $endif$
 $endfor$
+
+$for(affiliation)$
+$if(affiliation.number)$
+\address{\(^$affiliation.number$\)$affiliation.name$}
+$endif$
+$endfor$
+%%------------/AUTHORS--------------
+
+
+
+%%%% previously working
+%%------------AUTHORS--------------
+%$for(author)$
+%$if(author.name)$
+%\author{$author.name$}
+%$endif$
+%$if(author.address)$
+%\address{$author.address$}
+%$endif$
+%$endfor$
 %%------------/AUTHORS--------------
 
 %\address{$if(affiliation)$
