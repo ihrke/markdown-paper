@@ -8,7 +8,7 @@ The source of this document is written in [markdown](https://daringfireball.net/
 
 The `Makefile` details how the translation works. If you are on linux, simply calling `make` in the parent directory will compile the report to a pdf-format if all dependencies are installed. Edit the variables in the Makefile to choose a template (located in `./templates`).
 
-So far, I have used it using `./templates/elsarticle-template-1.latex` but others may follow.
+So far, I have used it only with `./templates/elsarticle-template-1.latex` but others may follow.
 
 ## Usage
 
@@ -19,7 +19,7 @@ So far, I have used it using `./templates/elsarticle-template-1.latex` but other
     pip install pandoc-fignos
     ~~~
 2. Clone this repository
- 
+
     ~~~{bash}
     git clone
     ~~~
