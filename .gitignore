@@ -1,7 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.aux
 *.bbl
 *.blg
 *.log
 *.out
 *.spl
-*.aux
-paper.tex
+*.tex
+*.html
