@@ -229,6 +229,23 @@ $body$
 % \end{thebibliography}
 
 
+$if(acknowledgements)$
+\section*{Acknowledgements}
+$acknowledgements$
+$endif$
+
+$if(contribution)$
+\section*{Author contributions statement}
+$contribution$
+$endif$
+
+
+$if(additionalinformation)$
+\section*{Additional information}
+$additionalinformation$
+$additionalinformation$
+$endif$
+
 \end{document}
 
 %%
