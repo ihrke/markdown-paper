@@ -31,7 +31,7 @@ contribution: |
 additionalinformation: |
   To include, in this order: \textbf{Accession codes} (where applicable); \textbf{Competing financial interests} (mandatory statement).
   The corresponding author is responsible for submitting a \href{http://www.nature.com/srep/policies/index.html#competing}{competing financial interests statement} on behalf of all authors of the paper. This statement must be included in the submitted article file.
-template: elsevier
+template: scientific_reports 
 ...
 
 # Introduction
@@ -55,7 +55,7 @@ Footnotes can be entered using this code[^1].
 
 Figures are included like this.
 
-![This is gonna be the caption.](pics/dummy.pdf){#fig:dummy}
+![This is gonna be the caption.](pics/dummy.pdf){#fig:dummy width=100%}
 
 And referenced from here as Fig. @fig:dummy.
 

@@ -52,4 +52,6 @@ with open("Makefile.template", "r") as f:
 mktext=mktext.format(**config)
 with open("Makefile", "w") as f:
   f.write(mktext)
+  
+os.system("make clean")
 os.system("make")

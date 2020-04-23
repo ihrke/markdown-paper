@@ -1,6 +1,20 @@
 \documentclass[fleqn,10pt]{wlscirep}
-\newcommand{\autocite}[1]{\cite{#1}}
-\newcommand{\textcite}[1]{\cite{#1}}
+\usepackage{csquotes} 
+
+\usepackage[style=apa,backend=biber]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
+
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+%\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setkeys{Gin}{keepaspectratio}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+%\newcommand{\autocite}[1]{\cite{#1}}
+%\newcommand{\textcite}[1]{\cite{#1}}
+\addbibresource{$bibliography$}
 
 \title{$if(title)$$title$$endif$}
 
@@ -57,7 +71,7 @@ $endif$
 %% main text
 $body$
 
-\bibliography{$bibliography$}
+\printbibliography
 
 $if(acknowledgements)$
 \section*{Acknowledgements}
