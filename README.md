@@ -8,7 +8,7 @@ The source of this document is written in [markdown](https://daringfireball.net/
 
 The `Makefile` details how the translation works. If you are on linux, simply calling `make` in the parent directory will compile the report to a pdf-format if all dependencies are installed. Edit the variables in the Makefile to choose a template (located in `./templates`).
 
-So far, I have used it only with `./templates/elsarticle-template-1.latex` but others may follow.
+There is a convenience script `build.py` included. This script creates a `Makefile` fromt `Makefile.template` that is consistent with the desired template. The script-file has a list of all supported templates, at the time of this writing, it is "elsevier" and "scientific_reports". Which template to use is specified in the header of the `.md`-file using the `template:` field. If the template is not change, `build.py` does not need to be rerun but simply calling `make` will suffice.
 
 ## Usage
 
