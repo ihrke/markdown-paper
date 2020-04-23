@@ -33,7 +33,7 @@ contribution: |
 additionalinformation: |
   To include, in this order: \textbf{Accession codes} (where applicable); \textbf{Competing financial interests} (mandatory statement).
   The corresponding author is responsible for submitting a \href{http://www.nature.com/srep/policies/index.html#competing}{competing financial interests statement} on behalf of all authors of the paper. This statement must be included in the submitted article file.
-template: springer
+template: elsevier
 documentclass_options: 
   - final
 ...
@@ -52,6 +52,10 @@ Comments look like this and do not show up in the PDF
 References are cited as @mittner2014brain or [@mittner2014brain].
 
 # Methods
+
+- some
+- bullet
+- points
 
 Footnotes can be entered using this code[^1].
 

@@ -28,6 +28,8 @@
 %% The graphicx package provides the includegraphics command.
 \setkeys{Gin}{keepaspectratio}
 
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 %% The amssymb package provides various useful mathematical symbols
 \usepackage{amssymb}
 %% The amsthm package provides extended theorem environments
