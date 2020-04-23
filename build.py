@@ -16,6 +16,11 @@ templates={
     "template_file":"templates/scientific_reports.latex",
     "bibtexcommand":"biber",
     "natbib":"--biblatex"
+    },
+  "springer":{
+    "template_file":"templates/springer_svjour3.latex",
+    "bibtexcommand":"bibtex",
+    "natbib":"--natbib"
     }
   }
 

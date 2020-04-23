@@ -8,6 +8,7 @@ BIBTEX={bibtexcommand}
 
 export TEXINPUTS=.:./templates/dependencies//:
 export BIBINPUTS=.:./templates/dependencies//:
+export BSTINPUTS=.:./templates/dependencies//:
 
 
 $(PAPER).pdf: $(PAPER).tex $(BIBLIOGRAPHY)

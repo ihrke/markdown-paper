@@ -3,6 +3,8 @@ title:  'Great and certainly not overstated contribution to the literature'
 journal: 'Journal of Good Research'
 author:
 - name: Me Ofcourse
+  institute: Institute for Psychology, University of Tromsø
+  email: me@myuni.no
   footnote: 1
 - name: Some Otherdude
   footnote: 1
@@ -31,7 +33,9 @@ contribution: |
 additionalinformation: |
   To include, in this order: \textbf{Accession codes} (where applicable); \textbf{Competing financial interests} (mandatory statement).
   The corresponding author is responsible for submitting a \href{http://www.nature.com/srep/policies/index.html#competing}{competing financial interests statement} on behalf of all authors of the paper. This statement must be included in the submitted article file.
-template: scientific_reports 
+template: springer
+documentclass_options: 
+  - final
 ...
 
 # Introduction
