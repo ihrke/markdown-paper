@@ -1,0 +1,28 @@
+PAPER={mdfile}
+BIBLIOGRAPHY={bibtexfile}
+TEMPLATE={template_file}
+PANDOC=pandoc
+LATEX=pdflatex
+USE_NATBIB={natbib}#--biblatex #--natbib
+BIBTEX={bibtexcommand}
+
+export TEXINPUTS=.:./templates/dependencies//:
+export BIBINPUTS=.:./templates/dependencies//:
+
+
+$(PAPER).pdf: $(PAPER).tex $(BIBLIOGRAPHY)
+	$(LATEX)  $(PAPER).tex
+	$(BIBTEX) $(PAPER) 
+	$(LATEX) $(PAPER).tex
+
+$(PAPER).tex: $(PAPER).md $(BIBLIOGRAPHY) $(TEMPLATE)
+	$(PANDOC) -s --filter pandoc-fignos --filter filters/latex_textred.py --filter pandoc-citeproc $(USE_NATBIB) $(PAPER).md -o $(PAPER).tex --template $(TEMPLATE) --bibliography $(BIBLIOGRAPHY)
+
+watch: $(MD_FILES) $(BIBLIOGRAPHY)
+	fswatch -o $^ | xargs -n1 -I{{}} make
+
+
+.PHONY: clean all
+
+clean:
+	rm -rf *.aux *.bbl *.bcf *.blg *.log *.out *.pdf *.run.xml *.spl

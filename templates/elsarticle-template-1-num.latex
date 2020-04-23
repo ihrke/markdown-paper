@@ -18,6 +18,8 @@
 %%
 \documentclass[preprint,authoryear,12pt]{elsarticle}
 \usepackage[utf8]{inputenc}
+\newcommand{\autocite}[1]{\cite{#1}}
+\newcommand{\textcite}[1]{\cite{#1}}
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
