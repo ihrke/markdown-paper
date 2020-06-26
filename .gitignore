@@ -10,3 +10,6 @@
 *.spl
 *.tex
 *.html
+*.swp
+Makefile
+.DS_Store*
