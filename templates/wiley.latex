@@ -1,4 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Adapted from here: https://no.overleaf.com/latex/templates/wiley-journal-template/nnjcnfyhzcqp
+%
 % A template for Wiley article submissions developed by 
 % Overleaf for the Overleaf-Wiley pilot which ran 
 % during 2017 and 2018.
@@ -91,30 +93,32 @@
 \title{$title$}
 
 % List abbreviations here, if any. Please note that it is preferred that abbreviations be defined at the first instance they appear in the text, rather than creating an abbreviations list.
-\abbrevs{ABC, a black cat; DEF, doesn't ever fret; GHI, goes home immediately.}
+\abbrevs{$if(abbreviation)$$for(abbreviation)$$abbreviation$$sep$;$endfor$$endif$}
 
 % Include full author names and degrees, when required by the journal.
 % Use the \authfn to add symbols for additional footnotes and present addresses, if any. Usually start with 1 for notes about author contributions; then continuing with 2 etc if any author has a different present address.
-\author[1\authfn{1}]{Author One PhD}
-\author[2\authfn{1}]{Author A.~Two MD}
-\author[2\authfn{2}]{Author Three PhD}
-\author[2]{Author B.~Four}
+$for(author)$
+\author[$author.footnote$]{$author.name$}
+$endfor$
 
-\contrib[\authfn{1}]{Equally contributing authors.}
+%\contrib[\authfn{1}]{Equally contributing authors.}
 
 % Include full affiliation details for all authors
-\affil[1]{Department, Institution, City, State or Province, Postal Code, Country}
-\affil[2]{Department, Institution, City, State or Province, Postal Code, Country}
+$for(affiliation)$
+\affil[$affiliation.number$]{$affiliation.name$}
+$endfor$
 
-\corraddress{Author One PhD, Department, Institution, City, State or Province, Postal Code, Country}
-\corremail{correspondingauthor@email.com}
+\corraddress{$for(author)$$if(author.corresponding)$$author.name$, $author.institute$$endif$$endfor$}
+\corremail{$for(author)$$if(author.corresponding)$$author.email$$endif$$endfor$}
 
-\presentadd[\authfn{2}]{Department, Institution, City, State or Province, Postal Code, Country}
+%\presentadd[\authfn{2}]{Department, Institution, City, State or Province, Postal Code, Country}
 
-\fundinginfo{Funder One, Funder One Department, Grant/Award Number: 123456, 123457 and 123458; Funder Two, Funder Two Department, Grant/Award Number: 123459}
+$if(funding)$
+\fundinginfo{$funding$}
+$endif$
 
 % Include the name of the author that should appear in the running header
-\runningauthor{Author One et al.}
+%\runningauthor{$author$ et al.}
 
 \begin{document}
 
@@ -125,11 +129,33 @@
 $abstract$
 
 % Please include a maximum of seven keywords
-\keywords{keyword 1, \emph{keyword 2}, keyword 3, keyword 4, keyword 5, keyword 6, keyword 7}
+\keywords{$for(keyword)$$keyword$$sep$, $endfor$}
 \end{abstract}
 \end{frontmatter}
 
 $body$
+
+
+$if(acknowledgements)$
+\section*{Acknowledgements}
+$acknowledgements$
+$endif$
+
+
+$if(contribution)$
+\section*{Author contributions}
+$contribution$
+$endif$
+
+
+$if(additionalinformation)$
+\section*{Supporting Information}
+$additionalinformation$
+$endif$
+
+
+\printendnotes
+
 
 \bibliography{$bibliography$}
 
