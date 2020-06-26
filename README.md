@@ -1,7 +1,9 @@
 # markdown-paper
 
 Scientific paper in markdown using LaTeX. See the [pdf-directory](pdf/) for examples.
-
+<img src="pics/paper_elsevier.png" with=30%></img>
+<img src="pics/paper_elsevier.png" with=30%></img>
+<img src="pics/paper_elsevier.png" with=30%></img>
 
 ![elsevier](pics/paper_elsevier.png)
 ![scientific_reports](pics/paper_scientific_reports.png)
