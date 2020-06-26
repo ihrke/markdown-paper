@@ -106,21 +106,47 @@ wiley
 - `papertype`
 - `title`
 
+## Installation
+
+### with `conda`
+
+~~~{bash}
+conda create --name testenv pandoc pandocfilters
+conda activate testenv
+pip install pandoc-fignos
+~~~
+
+### linux
+
+~~~{bash}
+sudo apt-get install pandoc pandoc-citeproc
+pip install pandoc-fignos
+~~~
+
+
 ## Usage
 
-1. Install the dependencies
-
-    ~~~{bash}
-    sudo apt-get install pandoc pandoc-citeproc
-    pip install pandoc-fignos
-    ~~~
-2. Clone this repository
+1. Clone this repository
 
     ~~~{bash}
     git clone
     ~~~
-3. Edit `Makefile` to choose a template
-4. Write paper in `paper.md`, refs in `references.bib`, compile with `make`
+2. Write paper in `paper.md`, refs in `references.bib`
+3. compile with `python build.py paper.md`
+
+~~~
+usage: build.py [-h] [-t TEMPLATE] [-b] mdfile
+
+positional arguments:
+  mdfile
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -t TEMPLATE, --template TEMPLATE
+                        template to use for translation
+  -b, --build-makefile-only
+                        build Makefile only or also run latex?
+~~~
 
 NOTE: `paper.md` contains example code for tables, figures, equations, references and so on.
 
