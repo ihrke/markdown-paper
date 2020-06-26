@@ -60,7 +60,9 @@
 %% The lineno packages adds line numbers. Start line numbering with
 %% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
 %% for the whole article with \linenumbers after \end{frontmatter}.
+$if(lineno)$
 \usepackage{lineno}
+$endif$
 
 %% natbib.sty is loaded by default. However, natbib options can be
 %% provided with \biboptions{...} command. Following options are
@@ -179,7 +181,7 @@ $endif$
 %%
 %% Start line numbering here if you want
 %%
-$if(linenumbers)$
+$if(lineno)$
 \linenumbers
 $endif$
 
