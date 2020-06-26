@@ -19,5 +19,5 @@ for template,d in templates.items():
     # get rid of duplicates and sort
     vars=sorted(set(vars))
     for var in vars:
-        print("- %s"%var)
+        print("- `%s`"%var)
     print("")

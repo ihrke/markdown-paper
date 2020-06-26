@@ -20,62 +20,62 @@ This is a list of all supported templates along with a list of all variables def
 
 elsevier
 --------
-- abstract
-- acknowledgements
-- additionalinformation
-- affiliation
-- affiliation.name
-- affiliation.number
-- author-meta
-- author.address
-- author.corresponding
-- author.footnote
-- author.name
-- bibliography
-- body
-- citecolor
-- contribution
-- journal
-- keyword
-- linkcolor
-- title
-- title-meta
-- toc-depth
-- urlcolor
+- `abstract`
+- `acknowledgements`
+- `additionalinformation`
+- `affiliation`
+- `affiliation.name`
+- `affiliation.number`
+- `author-meta`
+- `author.address`
+- `author.corresponding`
+- `author.footnote`
+- `author.name`
+- `bibliography`
+- `body`
+- `citecolor`
+- `contribution`
+- `journal`
+- `keyword`
+- `linkcolor`
+- `title`
+- `title-meta`
+- `toc-depth`
+- `urlcolor`
 
 scientific_reports
 ------------------
-- abstract
-- acknowledgements
-- additionalinformation
-- affiliation.name
-- affiliation.number
-- author.corresponding
-- author.footnote
-- author.name
-- bibliography
-- body
-- contribution
-- keyword
-- title
+- `abstract`
+- `acknowledgements`
+- `additionalinformation`
+- `affiliation.name`
+- `affiliation.number`
+- `author.corresponding`
+- `author.footnote`
+- `author.name`
+- `bibliography`
+- `body`
+- `contribution`
+- `keyword`
+- `title`
 
 springer
 --------
-- abstract
-- acknowledgements
-- additionalinformation
-- author.email
-- author.footnote
-- author.institute
-- author.name
-- bibliography
-- body
-- documentclass_options
-- journal
-- keyword
-- svjourstyle
-- title
-- toc-depth
+- `abstract`
+- `acknowledgements`
+- `additionalinformation`
+- `author.email`
+- `author.footnote`
+- `author.institute`
+- `author.name`
+- `bibliography`
+- `body`
+- `documentclass_options`
+- `journal`
+- `keyword`
+- `svjourstyle`
+- `title`
+- `toc-depth`
 
 
 ## Usage
