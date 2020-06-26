@@ -5,7 +5,9 @@ import json
 from subprocess import Popen, PIPE
 from pandocfilters import stringify
 
+## read conf.py which has all supported templates
 exec(open("conf.py").read())
+
 mdfile=sys.argv[1]
 
 ## convert md to JSON
