@@ -2,30 +2,6 @@
 
 Scientific paper in markdown using LaTeX. See the [pdf-directory](pdf/) for examples.
 
-<style>
-figure {
-  float: left;
-  border: 1px #cccccc solid;
-  padding: 4px;
-  margin: auto;
-}
-
-figcaption {
-  background-color: black;
-  color: white;
-  font-style: italic;
-  padding: 2px;
-  text-align: center;
-}
-</style>
-
-<figure><img src="pics/paper_elsevier.png" width=30%></img><figcaption>elsevier</figcaption></figure>
-<figure><img src="pics/paper_scientific_reports.png" width=30%></img><figcaption>scientific_reports</figcaption></figure>
-<figure><img src="pics/paper_springer.png" width=30%></img><figcaption>springer</figcaption></figure>
-<figure><img src="pics/paper_wiley.png" width=30%></img><figcaption>wiley</figcaption></figure>
-
-<div style="clear:both;"></div>
-
 - [markdown-talk](https://github.com/ihrke/markdown-talk) - template for a beamer-based presentations
 - [markdown-letter](https://github.com/ihrke/markdown-letter) - template for a letters
 - [markdown-notes](https://github.com/ihrke/markdown-notes) - template for a notes
@@ -37,6 +13,13 @@ The `Makefile.template` file details how the translation works.
 There is a convenience script `build.py` that creates a `Makefile` from `Makefile.template` that is consistent with the desired template as specified in the `template` field in the markdown-header. All supported templates are listed in `conf.py`.  Which template to use is specified in the header of the `.md`-file using the `template:` field. If the template is not changed, `build.py` does not need to be rerun but simply calling `make` will suffice. It is also possible to specify the desired template on the command-line using the `-t <template name>` option. See `python build.py -h` for details. Note, however, that not all variables are implemented for all templates.
 
 If you are on linux, simply calling `make` in the parent directory will compile the report to a pdf-format if all dependencies are installed.
+
+## Preview of templates
+
+![paper_elsevier](pics/paper_elsevier.png)
+![paper_scientific_reports](pics/paper_scientific_reports.png)
+![paper_springer](pics/paper_springer.png)
+![paper_wiley](pics/paper_wiley.png)
 
 ## Supported templates
 
