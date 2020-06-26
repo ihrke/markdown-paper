@@ -2,6 +2,12 @@
 
 Scientific paper in markdown using LaTeX. See the [pdf-directory](pdf/) for examples.
 
+
+![elsevier](pics/paper_elsevier.pdf)
+![scientific_reports](pics/paper_scientific_reports.pdf)
+![springer](pics/paper_springer.pdf)
+![wiley](pics/paper_wiley.pdf)
+
 - [markdown-talk](https://github.com/ihrke/markdown-talk) - template for a beamer-based presentations
 - [markdown-letter](https://github.com/ihrke/markdown-letter) - template for a letters
 - [markdown-notes](https://github.com/ihrke/markdown-notes) - template for a notes
