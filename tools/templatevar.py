@@ -1,5 +1,9 @@
 """
 Find and print all variables provided for each template.
+
+Script assumes that it is called from the top-level directory, i.e. using
+
+$ python tools/templatevar.py
 """
 import re
 import numpy as np
