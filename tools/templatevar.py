@@ -23,5 +23,8 @@ for template,d in templates.items():
     # get rid of duplicates and sort
     vars=sorted(set(vars))
     for var in vars:
-        print("- `%s`"%var)
+        description=d["variables"][var] if var in d["variables"].keys() else ""
+        print("- `{varname}`{sep}{description}".format(varname=var, 
+            sep="" if len(description)==0 else ": ", 
+            description=description))
     print("")
