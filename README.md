@@ -1,6 +1,6 @@
 # markdown-paper
 
-Scientific paper in markdown using LaTeX.
+Scientific paper in markdown using LaTeX. See the [pdf-directory](pdf/) for examples.
 
 - [markdown-talk](https://github.com/ihrke/markdown-talk) - template for a beamer-based presentations
 - [markdown-letter](https://github.com/ihrke/markdown-letter) - template for a letters
