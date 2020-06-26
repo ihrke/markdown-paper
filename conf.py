@@ -23,5 +23,13 @@ templates={
     "variables":{ ## specify/document variables 
 
     }
-    }
+    },
+  "wiley":{
+      "template_file":"templates/wiley.latex",
+      "bibtexcommand":"bibtex",
+      "natbib":"--natbib",
+      "variables":{
+
+      }
+  }
   }

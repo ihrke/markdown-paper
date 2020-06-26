@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% A template for Wiley article submissions developed by 
+% Overleaf for the Overleaf-Wiley pilot which ran 
+% during 2017 and 2018.
+% 
+% This template is no longer supported, but is provided
+% for historical reference. Last updated January 2019.
+%
+% Please note that whilst this template provides a 
+% preview of the typeset manuscript for submission, it 
+% will not necessarily be the final publication layout.
+%
+% Document class options:
+% =======================
+% blind: Anonymise all author, affiliation, correspondence
+%        and funding information.
+%
+% lineno: Adds line numbers.
+%
+% serif: Sets the body font to be serif. 
+%
+% twocolumn: Sets the body text in two-column layout. 
+% 
+% num-refs: Uses numerical citation and references style 
+%           (Vancouver-authoryear).
+%
+% alpha-refs: Uses author-year citation and references style
+%             (rss).
+%
+% Using other bibliography styles:
+% =======================
+%
+% To specify a different bibiography style
+%
+% 1) Do not use either num-refs or alpha-refs in documentclass.
+% 2) Load natbib package with the options set as needed.
+% 3) Use the \bibliographystyle command to specify the style
+% 
+% Included NJD styles are: 
+%   WileyNJD-ACS
+%   WileyNJD-AMA
+%   WileyNJD-AMS
+%   WileyNJD-APA
+%   WileyNJD-Harvard
+%   WileyNJD-VANCOUVER
+%
+% or you may upload an alternative .bst file 
+% (if requested by the journal).
+%
+% Examples:
+% =======================
+%% Example: Using numerical, sort-by-authors citations.
+\documentclass[$if(lineno)$lineno$endif$]{wiley-article}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[unicode=true]{hyperref}
+
+%% Example: Using author-year citations and anonymising submission
+% \documentclass[blind,alpha-refs]{wiley-article}
+
+%% Example: Using unsrtnat for numerical, in-sequence citations
+% \documentclass{wiley-article}
+% \usepackage[numbers]{natbib}
+% \bibliographystyle{unsrtnat}
+
+%% Example: Using WileyNJD-AMA reference style and superscript
+%%          citations, two-column and serif fonts for AIChE
+% \documentclass[serif,twocolumn,lineno]{wiley-article}
+
+%% this implements APA style in Wiley
+%\usepackage{natbib}
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{WileyNJD-APA}
+%% The graphicx package provides the includegraphics command.
+\usepackage{graphicx}
+\setkeys{Gin}{keepaspectratio}
+
+
+% \makeatletter
+% \renewcommand{\@biblabel}[1]{#1.}
+% \makeatother
+
+% Add additional packages here if required
+\usepackage{siunitx}
+
+% Update article type if known
+\papertype{$if(papertype)$$papertype$$else$Original Article$endif$}
+% Include section in journal if known, otherwise delete
+\paperfield{$if(journalsection)$$journalsection$$else$Journal Section$endif$}
+
+\title{$title$}
+
+% List abbreviations here, if any. Please note that it is preferred that abbreviations be defined at the first instance they appear in the text, rather than creating an abbreviations list.
+\abbrevs{ABC, a black cat; DEF, doesn't ever fret; GHI, goes home immediately.}
+
+% Include full author names and degrees, when required by the journal.
+% Use the \authfn to add symbols for additional footnotes and present addresses, if any. Usually start with 1 for notes about author contributions; then continuing with 2 etc if any author has a different present address.
+\author[1\authfn{1}]{Author One PhD}
+\author[2\authfn{1}]{Author A.~Two MD}
+\author[2\authfn{2}]{Author Three PhD}
+\author[2]{Author B.~Four}
+
+\contrib[\authfn{1}]{Equally contributing authors.}
+
+% Include full affiliation details for all authors
+\affil[1]{Department, Institution, City, State or Province, Postal Code, Country}
+\affil[2]{Department, Institution, City, State or Province, Postal Code, Country}
+
+\corraddress{Author One PhD, Department, Institution, City, State or Province, Postal Code, Country}
+\corremail{correspondingauthor@email.com}
+
+\presentadd[\authfn{2}]{Department, Institution, City, State or Province, Postal Code, Country}
+
+\fundinginfo{Funder One, Funder One Department, Grant/Award Number: 123456, 123457 and 123458; Funder Two, Funder Two Department, Grant/Award Number: 123459}
+
+% Include the name of the author that should appear in the running header
+\runningauthor{Author One et al.}
+
+\begin{document}
+
+\begin{frontmatter}
+\maketitle
+
+\begin{abstract}
+$abstract$
+
+% Please include a maximum of seven keywords
+\keywords{keyword 1, \emph{keyword 2}, keyword 3, keyword 4, keyword 5, keyword 6, keyword 7}
+\end{abstract}
+\end{frontmatter}
+
+$body$
+
+\bibliography{$bibliography$}
+
+\end{document}
