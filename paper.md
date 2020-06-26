@@ -2,15 +2,16 @@
 title:  'Great and certainly not overstated contribution to the literature'
 journal: 'Journal of Good Research'
 author:
-- name: Me Ofcourse
-  institute: Institute for Psychology, University of Tromsø
+- name: Sigmund Freud
   email: me@myuni.no
   footnote: 1
-- name: Some Otherdude
+- name: Knut Knutsen
   footnote: 1
-- name: And Thisguy
+- name: Erik Eriksson
   footnote: 2
-  corresponding: and.thisguy@otherplace.org
+  institute: Institute for Psychology, University of Tromsø # corresponding author needs institute
+  corresponding: true
+  email: and.thisguy@otherplace.org
 affiliation:
 - number: 1
   name: Institute for Psychology, University of Tromsø
@@ -19,14 +20,19 @@ affiliation:
 keyword:
   - latex
   - markdown
+lineno: false
+abbreviation:
+  - tDCS, transcranial direct current stimulation
+  - MW, mind wandering
 abstract: |
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-linenumbers: true
 bibliography: references.bib
 acknowledgements: |
   We'd like to thank bla bla and blablab
+funding: |
+  Funder One, Funder One Department, Grant/Award Number: 123456, 123457 and 123458; Funder Two, Funder Two Department, Grant/Award Number: 123459
 contribution: |
   Must include all authors, identified by initials, for example:
   A.A. conceived the experiment(s),  A.A. and B.A. conducted the experiment(s), C.A. and D.A. analysed the results.  All authors reviewed the manuscript.
