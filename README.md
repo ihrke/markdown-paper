@@ -28,14 +28,14 @@ elsevier
 - `affiliation.number`
 - `author-meta`
 - `author.address`
-- `author.corresponding`
+- `author.email`
 - `author.footnote`
 - `author.name`
 - `bibliography`
 - `body`
 - `citecolor`
 - `contribution`
-- `journal`
+- `journal`: journal name (str)
 - `keyword`
 - `linkcolor`
 - `title`
@@ -50,7 +50,7 @@ scientific_reports
 - `additionalinformation`
 - `affiliation.name`
 - `affiliation.number`
-- `author.corresponding`
+- `author.email`
 - `author.footnote`
 - `author.name`
 - `bibliography`
@@ -77,6 +77,27 @@ springer
 - `title`
 - `toc-depth`
 
+wiley
+-----
+- `abbreviation`
+- `abstract`
+- `acknowledgements`
+- `additionalinformation`
+- `affiliation.name`
+- `affiliation.number`
+- `author`
+- `author.email`
+- `author.footnote`
+- `author.institute`
+- `author.name`
+- `bibliography`
+- `body`
+- `contribution`
+- `funding`
+- `journalsection`
+- `keyword`
+- `papertype`
+- `title`
 
 ## Usage
 
