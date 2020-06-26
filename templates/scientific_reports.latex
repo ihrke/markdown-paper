@@ -33,7 +33,7 @@ $endfor$
 
 $for(author)$
 $if(author.corresponding)$
-\affil[*]{$author.corresponding$}
+\affil[*]{$author.email$}
 $endif$
 $endfor$
 %%------------/AUTHORS--------------

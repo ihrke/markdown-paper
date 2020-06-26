@@ -131,7 +131,7 @@ $endif$
 %%------------AUTHORS--------------
 $for(author)$
 $if(author.name)$
-\author{$author.name$\(^\text{$author.footnote$}\)$if(author.corresponding)$\footnote[$$\ast$$]{Corresponding author: \url{$author.corresponding$}}$endif$}
+\author{$author.name$\(^\text{$author.footnote$}\)$if(author.corresponding)$\footnote[$$\ast$$]{Corresponding author: \url{$author.email$}}$endif$}
 $endif$
 $endfor$
 
