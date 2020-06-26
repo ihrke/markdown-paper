@@ -10,7 +10,7 @@ The source of this document is written in [markdown](https://daringfireball.net/
 
 The `Makefile.template` file details how the translation works. 
 
-There is a convenience script `build.py` that creates a `Makefile` from `Makefile.template` that is consistent with the desired template as specified in the `template` field in the markdown-header. All supported templates are listed in `conf.py`.  Which template to use is specified in the header of the `.md`-file using the `template:` field. If the template is not changed, `build.py` does not need to be rerun but simply calling `make` will suffice.
+There is a convenience script `build.py` that creates a `Makefile` from `Makefile.template` that is consistent with the desired template as specified in the `template` field in the markdown-header. All supported templates are listed in `conf.py`.  Which template to use is specified in the header of the `.md`-file using the `template:` field. If the template is not changed, `build.py` does not need to be rerun but simply calling `make` will suffice. It is also possible to specify the desired template on the command-line using the `-t <template name>` option. See `python build.py -h` for details. Note, however, that not all variables are implemented for all templates.
 
 If you are on linux, simply calling `make` in the parent directory will compile the report to a pdf-format if all dependencies are installed.
 
