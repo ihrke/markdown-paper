@@ -1,14 +1,11 @@
 # markdown-paper
 
 Scientific paper in markdown using LaTeX. See the [pdf-directory](pdf/) for examples.
-<img src="pics/paper_elsevier.png" width=30%></img>
-<img src="pics/paper_elsevier.png" width=30%></img>
-<img src="pics/paper_elsevier.png" width=30%></img>
 
-![elsevier](pics/paper_elsevier.png)
-![scientific_reports](pics/paper_scientific_reports.png)
-![springer](pics/paper_springer.png)
-![wiley](pics/paper_wiley.png)
+<img src="pics/paper_elsevier.png" width=30%></img>
+<img src="pics/paper_scientific_reports.png" width=30%></img>
+<img src="pics/paper_springer.png" width=30%></img>
+<img src="pics/paper_wiley.png" width=30%></img>
 
 - [markdown-talk](https://github.com/ihrke/markdown-talk) - template for a beamer-based presentations
 - [markdown-letter](https://github.com/ihrke/markdown-letter) - template for a letters
