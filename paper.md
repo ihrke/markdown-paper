@@ -1,17 +1,19 @@
 ---
 title:  'Great and certainly not overstated contribution to the literature'
+shorttitle: 'Overstated contribution to the literature'
 journal: 'Journal of Good Research'
 author:
 - name: Sigmund Freud
   email: me@myuni.no
   footnote: 1
+  orcid: 0000-0002-9998-0058
 - name: Knut Knutsen
   footnote: 1
 - name: Erik Eriksson
   footnote: 2
   institute: Institute for Psychology, University of Tromsø # corresponding author needs institute
-  corresponding: true
   email: and.thisguy@otherplace.org
+  corresponding: true
 affiliation:
 - number: 1
   name: Institute for Psychology, University of Tromsø
@@ -33,13 +35,15 @@ acknowledgements: |
   We'd like to thank bla bla and blablab
 funding: |
   Funder One, Funder One Department, Grant/Award Number: 123456, 123457 and 123458; Funder Two, Funder Two Department, Grant/Award Number: 123459
+data: |
+  Data availability statement. Preprocessed data could be available e.g. on \href{https://zenodo.org/}{Zenodo}.
 contribution: |
   Must include all authors, identified by initials, for example:
   A.A. conceived the experiment(s),  A.A. and B.A. conducted the experiment(s), C.A. and D.A. analysed the results.  All authors reviewed the manuscript.
 additionalinformation: |
   To include, in this order: \textbf{Accession codes} (where applicable); \textbf{Competing financial interests} (mandatory statement).
   The corresponding author is responsible for submitting a \href{http://www.nature.com/srep/policies/index.html#competing}{competing financial interests statement} on behalf of all authors of the paper. This statement must be included in the submitted article file.
-template: elsevier
+template: elife
 documentclass_options: 
   - final
 ...
@@ -59,6 +63,8 @@ References are cited as @mittner2014brain or [@mittner2014brain].
 
 # Methods
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 - some
 - bullet
 - points
@@ -69,7 +75,7 @@ Footnotes can be entered using this code[^1].
 
 Figures are included like this.
 
-![This is gonna be the caption.](pics/dummy.pdf){#fig:dummy width=100%}
+![This is gonna be the caption.](pics/dummy.pdf){#fig:dummy width=40% height=20%}
 
 And referenced from here as Fig. @fig:dummy.
 
@@ -101,6 +107,10 @@ Table in LaTeX format because of fancy formatting
 
 # Results
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 # Discussion
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 # References

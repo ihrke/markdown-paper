@@ -4,6 +4,10 @@ $if(fontfamily)$
 $else$
 \usepackage{lmodern}
 $endif$
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 $if(linestretch)$
 \usepackage{setspace}
 \setstretch{$linestretch$}
@@ -140,10 +144,10 @@ $endif$
 
 
 $if(author)$
-\author{$for(author)$$author$$sep$ and $endfor$}
+\author{$for(author)$$author.name$$sep$ and $endfor$}
 $endif$
 %\date{$date$}
-\date{$if(affiliation)$\begin{minipage}{\textwidth}\flushleft\normalsize$for(affiliation)$$affiliation$$sep$ \\ $endfor$\end{minipage}$endif$}
+\date{$if(affiliation)$\begin{minipage}{\textwidth}\flushleft\normalsize $for(affiliation)$$affiliation.name$$sep$ \\ $endfor$\end{minipage}$endif$}
 $for(header-includes)$
 $header-includes$
 $endfor$

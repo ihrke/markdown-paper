@@ -1,5 +1,13 @@
 default_template="elsevier"
 templates={
+  "elife":{
+    "template_file":"templates/lapreprint-elife.latex",
+    "bibtexcommand":"bibtex",
+    "natbib":"--natbib",
+    "variables":{ ## specify/document variables 
+
+    }
+  },
   "elsevier":{
     "template_file":"templates/elsarticle-template-1-num.latex",
     "bibtexcommand":"bibtex",
@@ -28,6 +36,14 @@ templates={
       "template_file":"templates/wiley.latex",
       "bibtexcommand":"bibtex",
       "natbib":"--natbib",
+      "variables":{
+
+      }
+  },
+  "generic":{
+    "template_file":"templates/paper.latex",
+      "bibtexcommand":"biber",
+      "natbib":"--biblatex",
       "variables":{
 
       }

@@ -16,7 +16,9 @@ If you are on linux, simply calling `make` in the parent directory will compile 
 
 ## Preview of templates
 
+![paper_elife](pics/paper_elife.png)
 ![paper_elsevier](pics/paper_elsevier.png)
+![paper_generic](pics/paper_generic.png)
 ![paper_scientific_reports](pics/paper_scientific_reports.png)
 ![paper_springer](pics/paper_springer.png)
 ![paper_wiley](pics/paper_wiley.png)
@@ -24,6 +26,25 @@ If you are on linux, simply calling `make` in the parent directory will compile 
 ## Supported templates
 
 This is a list of all supported templates along with a list of all variables defined for each template. It is generated using `tools/templatevar.py` and may or may not be outdated.
+
+elife
+-----
+- `abstract`
+- `acknowledgements`
+- `additionalinformation`
+- `affiliation.name`
+- `affiliation.number`
+- `author.email`
+- `author.footnote`
+- `author.name`
+- `author.orcid`
+- `bibliography`
+- `body`
+- `contribution`
+- `data`
+- `funding`
+- `shorttitle`
+- `title`
 
 elsevier
 --------

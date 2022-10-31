@@ -1,0 +1,165 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% LaPreprint: PREPRINT TEMPLATE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Here I could talk about what one should do in this document.
+% Instead I'll refer you to the explore on your own as check the Github Repo. :-)
+% Line spacing is 1.2 by default (can't be smaller).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PREAMBLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Declare document class
+\documentclass[9pt,biorxiv,lineno,blue]{lapreprint}
+% Choose between "biorxiv", "medrxiv", "arxiv" and "chemrxiv". Otherwise defaults "Preprint".
+% Choose between "blue" and "red" colour scheme. Defaults to "blue".
+% Use the "onehalfspacing" option for 1.5 line spacing.
+% Use the "doublespacing" option for 2.0 line spacing.
+% Use the "lineno" option for line numbers.
+% Use the "endfloat" option to place floats after the bibliography.
+
+% Import packages
+\usepackage{lipsum}     % Required to insert dummy text
+\usepackage[version=4]{mhchem} % For chemical notation
+\usepackage{siunitx}    % For SI units
+\usepackage{pdflscape}  % For putting pages in landscape mode
+\usepackage{rotating}   % For rotating specific elements
+\usepackage{textgreek}  % Greek symbols
+\usepackage{gensymb}    % Symbols
+\usepackage[misc]{ifsym} % For the \Letter symbol
+\usepackage{orcidlink}  % For the \orcidlink
+\usepackage{listings}   % For inserting code chunks
+\usepackage{colortbl}   % For Knitr table colouring
+\usepackage{tabularx}   % For making Knitr tables compatible
+\usepackage{longtable}  % For multi-page tables
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{snotez}     % For sidenote environments. enotez for endnotes
+
+% Make declarations
+\DeclareSIUnit\Molar{M}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Please note that these options may affect formatting.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ARTICLE SETUP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Paper title
+\title{$if(title)$$title$$endif$}
+
+
+%%------------AUTHORS--------------
+$for(author)$
+$if(author.name)$
+\author[$if(author.orcid)$ \orcidlink{$author.orcid$}$endif$ $author.footnote$ $if(author.corresponding)$\Letter $endif$]{$author.name$}
+$endif$
+$endfor$
+$for(affiliation)$
+$if(affiliation.number)$    
+\affil[$affiliation.number$]{$affiliation.name$}
+$endif$
+$endfor$
+
+%%------------/AUTHORS--------------
+
+% Correspondence
+$for(author)$
+$if(author.corresponding)$
+\correspondence{$author.email$}{$author.name$}
+$endif$
+$endfor$
+
+% Contribution note
+%\contribution[\authfn{1}\authfn{2}\authfn{3}]{Here's a few symbols to denote contribution specifics, e.g. authors who contributed equally to the work.}
+
+% Present address of corresponding author
+%\presentaddress[]{Evolution, Behaviour and Environment, School of Life Sciences, University of Sussex, Biology Road, Brighton, BN1 9RH, United Kingdom}
+
+% Data availability statement, funding and competing interests.
+
+$if(data)$
+\data[]{$data$}
+$endif$
+
+$if(funding)$
+\funding[]{$funding$}
+$endif$
+
+%\compint[]{The author declare no competing interests.}
+
+
+% Surname of the lead author(s) for the running footer
+$for(author)$
+$if(author.corresponding)$
+\leadauthor{$author.name$}
+$endif$
+$endfor$
+
+$if(shorttitle)$
+\shorttitle{$shorttitle$}
+$endif$
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ARTICLE START
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+
+$if(abstract)$
+\begin{abstract}
+%% Text of abstract
+$abstract$
+\end{abstract}
+$endif$
+
+
+$body$
+
+
+$if(acknowledgements)$
+\section{Acknowledgements}
+$acknowledgements$
+$endif$
+
+$if(contribution)$
+\section{Author contributions statement}
+$contribution$
+$endif$
+
+
+$if(additionalinformation)$
+\section{Additional information}
+$additionalinformation$
+$additionalinformation$
+$endif$
+
+%\bibliographystyle{vancouver-elife}
+\bibliography{$bibliography$}
+
+% DON'T EDIT. If "endfloat" option is enabled all floats appear before appendices
+\if@endfloat\clearpage\processdelayedfloats\clearpage\fi 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% SUPPLEMENTARY MATERIAL / APPENDICES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{appendix}
+%\begin{appendixbox}\label{app:ttt}
+%   % \input{src/supplementary/appendices.tex}
+%\end{appendixbox}
+%\end{appendix}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ARTICLE END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
