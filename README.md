@@ -129,6 +129,14 @@ wiley
 
 ## Installation
 
+### first you need `LateX`
+
+~~~{bash}
+brew install --cask mactex-no-gui
+~~~
+then add `export PATH=$PATH:/Library/TeX/texbin` to your .*rc and source it
+
+
 ### with `conda`
 
 ~~~{bash}
