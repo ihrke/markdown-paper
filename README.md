@@ -152,6 +152,11 @@ sudo apt-get install pandoc pandoc-citeproc
 pip install pandoc-fignos
 ~~~
 
+Due to [a bug](https://github.com/tompollard/phd_thesis_markdown/issues/117) in `pandoc-xnos`, a fixed version of `pandoc-xnos` is necessary to be installed:
+
+~~~{bash}
+pip install --force-reinstall git+https://github.com/tomduck/pandoc-xnos@284474574f51888be75603e7d1df667a0890504d#egg=pandoc-xnos
+~~~
 
 ## Usage
 
